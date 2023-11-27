@@ -22,9 +22,11 @@ let topBar= document.querySelector("#nav");
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll",()=>{
   if (lastScrollY < window.scrollY){
+    console.log("scrolling down");
     topBar.classList.add("-translate-y-11");
   }
   else{
+    console.log("scrolling up");
     topBar.classList.remove("-translate-y-11");
   }
   lastScrollY = window.scrollY;
