@@ -32,12 +32,11 @@
        </div>
     </div>
     <!-- ######### END of LOADER ########## -->
-
     
     <!-- ######### HEADER ########## -->
     <header class="">
-        <nav id="nav" class="fixed transition-transform w-full z-[99]">
-            <div id="topbar" class=" relative w-full py-3">
+        <nav id="nav" class="fixed w-full z-[99]">
+            <div id="topbar" class="relative w-full py-3">
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 flex justify-between text-white font-bold text-xs md:text-sm  gap-3 mx-auto">
                     <div>Mon-Sat: 11AM - 23PM</div>
                     <div class="flex">
@@ -54,11 +53,20 @@
                     </div>
                     <!-- pc navigation -->
                     <div id="pc-nav" class="hidden md:block my-auto">
-                        <ul class="text-white flex items-center gap-5 ">
+                        <ul class="text-white flex items-center gap-5">
                             <a href="#"><li class="text-lg hover:text-yellow-600">Home</li></a>
                             <a href="#"><li class="text-lg hover:text-yellow-600">Booking</li></a>
                             <a href="#about"><li class="text-lg hover:text-yellow-600">About Us</li></a>
-                            <a href="#menu"><li class="text-lg hover:text-yellow-600">Menus</li></a>
+                            <div class="group">
+                                <li class="text-lg hover:text-yellow-600 ">Menus</li>
+                                <div class="">
+                                    <ul class="group-hover:visible flex invisible transition-transform duration-200 translate-y-3 flex-col gap-1 absolute group-hover:translate-y-0 bg-[#0c0b09]">
+                                        <a href="#"><li class="px-8 hover:bg-yellow-600 py-2">Item 1</li></a>
+                                        <a href="#"><li class="px-8 hover:bg-yellow-600 py-2">Item 2</li></a>
+                                        <a href="#"><li class="px-8 hover:bg-yellow-600 py-2">Item 3</li></a>
+                                    </ul>  
+                                </div>
+                            </div>                         
                             <a href="#special"><li class="text-lg hover:text-yellow-600">Specials</li></a>
                             <a href="#"><li class="text-lg hover:text-yellow-600">Contact</li></a>
                             <a href="#location"><li class="text-lg hover:text-yellow-600">Location</li></a>
@@ -74,8 +82,14 @@
                     <a href="#"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Home</li></a>
                     <a href="#"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Booking</li></a>
                     <a href="#about"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">About Us</li></a>
-                    <a href="#menu"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Menus</li></a>
-                    <a href="#special"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Specials</li></a>
+                    <div class="group"><li class="text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-yellow-600">Menus
+                    </li>
+                    <ul class="group-hover:flex hidden flex-col gap-1">
+                        <a href="#item1"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 1</li></a>
+                        <a href="#item2"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 2</li></a>
+                        <a href="#item3"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 3</li></a>
+                    </ul></div>
+                    <a href="#special"><li class="menu-items border-t-2  text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Specials</li></a>
                     <a href="#"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Contact</li></a>
                     <a href="#location"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold ">Location</li></a>
                 </ul>
