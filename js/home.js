@@ -53,18 +53,15 @@ for (let i = 0; i < btns.length; i++) {
   element.addEventListener("click", function () {
     console.log(element.id);
     document.querySelectorAll(".fooditems").forEach(element2 => {
-      if (element.id != "all") {
+     
         if (element2.classList.contains(element.id)) {
 
           element2.classList.remove("hidden")
         }
         else {
           element2.classList.add("hidden")
+         
         }
-      }
-      else {
-        element2.classList.remove("hidden")
-      }
     });
 
   })

@@ -181,55 +181,62 @@
                     <div class="ttl text-yellow-600 text-3xl lg:text-4xl text-center font-bold">Our Menu</div>
                     <div class="w-full flex flex-wrap justify-center py-14">
                         <div class="options flex gap-5 text-white text-xs md:text-sm lg:text-lg justify-center">
-                            <div id="all" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">ALL</div>
-                            <div id="appetizers" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">APPETIZERS</div>
-                            <div id="chicken" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">CHICKEN</div>
-                            <div id="veg" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">VEGETARIAN</div>
+                            <button id="appetizers" class="filter-btn hover:text-yellow-600 focus:text-yellow-600 cursor-pointer pb-2 ">Appetizers</button>
+                            <button id="chicken" class="filter-btn hover:text-yellow-600 focus:text-yellow-600 cursor-pointer pb-2 ">Chicken</button>
+                            <button id="veg" class="filter-btn hover:text-yellow-600 focus:text-yellow-600 cursor-pointer pb-2 ">Vegetarian</button>
                         </div>
                     </div>
                     <div id="menus" class=" flex flex-col gap-16" data-aos="fade-up" data-aos-offset="200">
                         <!-- food items  -->
-                        <div class="flex justify-center appetizers fooditems">
-                            <div id="fimage" class="w-[20%] flex justify-end">
-                                <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                        <div class="appetizers fooditems flex flex-col gap-16">
+                            <!-- items  -->
+                            <div class="flex justify-center ">
+                                <div id="fimage" class="w-[20%] flex justify-end">
+                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                </div>
+                                <div id="fdesc" class="w-[60%] px-3">
+                                    <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
+                                    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                                </div>
+                                <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                             </div>
-                            <div id="fdesc" class="w-[60%] px-3">
-                                <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
-                                <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                            <!-- items  -->
+                            <div class="flex justify-center">
+                                <div id="fimage" class="w-[20%] flex justify-end">
+                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                </div>
+                                <div id="fdesc" class="w-[60%] px-3">
+                                    <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
+                                    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                                </div>
+                                <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                             </div>
-                            <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                         </div>
-                        <div class="flex justify-center appetizers fooditems">
-                            <div id="fimage" class="w-[20%] flex justify-end">
-                                <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                        <div class="chicken fooditems flex flex-col gap-16 hidden">
+                            <!-- items  -->
+                            <div class="flex justify-center ">
+                                <div id="fimage" class="w-[20%] flex justify-end">
+                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                </div>
+                                <div id="fdesc" class="w-[60%] px-3">
+                                    <div class="font-bold text-xl text-yellow-600">CHICKEN</div>
+                                    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                                </div>
+                                <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                             </div>
-                            <div id="fdesc" class="w-[60%] px-3">
-                                <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
-                                <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
-                            </div>
-                            <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                         </div>
-
-                        <div class="flex justify-center chicken fooditems">
-                            <div id="fimage" class="w-[20%] flex justify-end">
-                                <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                        <div class="veg fooditems flex flex-col gap-16 hidden">
+                                <!-- items  -->
+                            <div class="flex justify-center ">
+                                <div id="fimage" class="w-[20%] flex justify-end">
+                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                </div>
+                                <div id="fdesc" class="w-[60%] px-3">
+                                    <div class="font-bold text-xl text-yellow-600">VEGETARIAN</div>
+                                    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                                </div>
+                                <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                             </div>
-                            <div id="fdesc" class="w-[60%] px-3">
-                                <div class="font-bold text-xl text-yellow-600">CHICKEN</div>
-                                <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
-                            </div>
-                            <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
-                        </div>
-
-                        <div class="flex justify-center veg fooditems">
-                            <div id="fimage" class="w-[20%] flex justify-end">
-                                <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
-                            </div>
-                            <div id="fdesc" class="w-[60%] px-3">
-                                <div class="font-bold text-xl text-yellow-600">VEGETARIAN</div>
-                                <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
-                            </div>
-                            <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                         </div>
                     </div>
                 </div>
