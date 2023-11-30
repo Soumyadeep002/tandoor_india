@@ -8,7 +8,7 @@
     <style>
         html {
       scroll-behavior: smooth;
-      scroll-padding-top: 200px;}
+      scroll-padding-top: 100px;}
       .vanish{
     animation: vanish 1s forwards;
   }
@@ -82,9 +82,9 @@
                     <a href="#"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Home</li></a>
                     <a href="#"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Booking</li></a>
                     <a href="#about"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">About Us</li></a>
-                    <div class="group"><li class="text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-yellow-600">Menus
+                    <div class="group"><li id="mob-menu-list" class="text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-yellow-600">Menus
                     </li>
-                    <ul class="group-hover:flex hidden flex-col gap-1">
+                    <ul id="menulist" class="hidden flex-col gap-1">
                         <a href="#item1"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 1</li></a>
                         <a href="#item2"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 2</li></a>
                         <a href="#item3"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 3</li></a>
@@ -111,7 +111,7 @@
         <!-- ######### HOME ########## -->
         <section id="home">
             <div id="" class="w-screen h-screen bg-no-repeat bg-cover bg-[50%]" style="background-image: url(img/homebg.jpg); ">
-                <div class="texts w-full h-full flex flex-col items-center justify-center px-5">
+                <div class="texts w-full h-full flex flex-col items-center justify-center px-5" data-aos="zoom-in-up">
                     <div class="mainttl text-center text-7xl md:text-8xl lg:text-9xl font-serif hover:scale-110 duration-500 align-middle text-white"><span class="text-yellow-600">Better</span> Meal</div>
                     <div class="w-full md:w-2/3 lg:1/3 text-white text-center mt-8 font-semibold bg-black py-8 px-5 bg-opacity-50">Here at Tandoor, the chef creates and provides our guest with authentic cuisine from Northern India, famous for its savory clay oven dishes and exotic curries.</div>
                     <div class="mt-10 flex flex-col md:flex-row gap-5">
@@ -128,11 +128,11 @@
             <div  class="about  bg-black bg-opacity-75" >
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto flex flex-col md:flex-row-reverse justify-center gap-8 py-20">
                     <div id="about-right" class="w-full md:w-1/2">
-                        <img class=" w-full brightness-100 border-4 hover:scale-[1.05] duration-500 border-white" src="img/about.jpg" alt="about-image" data-aos="zoom-in-left" data-aos-offset="200">
+                        <img class=" w-full brightness-100 border-4 hover:scale-[1.05] duration-500 border-white" src="img/about.jpg" alt="about-image" data-aos="zoom-in-up" data-aos-offset="200">
                     </div>
                     <div id="about-left" class="w-full md:w-1/2">
                         <h1 class="text-white text-4xl font-bold">About Us </h1>
-                        <div class=" text-white text-justify" data-aos="zoom-in-right" data-aos-offset="200">
+                        <div class=" text-white text-justify" data-aos="zoom-in-up" data-aos-offset="200">
                             <br>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequuntur vero libero reprehenderit beatae voluptatum, assumenda doloribus similique dolore consectetur vitae exercitationem, eum iure cumque optio atque corporis eligendi qui?</p>
                             <br>
@@ -152,20 +152,20 @@
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
                     <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center">Why Choose Our Restaurant</div>
                     <div class="w-full gap-5 flex flex-wrap justify-center pt-14">
-                        <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5" data-aos="flip-up" data-aos-offset="200">
-                            <div class="text-yellow-600 font-bold text-lg md:text-2xl">01</div>
+                        <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5 group" data-aos="fade-up" data-aos-offset="400">
+                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white">01</div>
                             <div class="text-white text-2xl md:text-3xl font-bold">Lorem Epsum</div>
-                            <div class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
+                            <div class="text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
                         </div>
-                        <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5" data-aos="flip-up" data-aos-offset="200">
-                            <div class="text-yellow-600 font-bold text-lg md:text-2xl">02</div>
+                        <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5 group" data-aos="fade-up" data-aos-offset="400">
+                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white">02</div>
                             <div class="text-white text-2xl md:text-3xl font-bold">Lorem Epsum</div>
-                            <div class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
+                            <div class="text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
                         </div>
-                        <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5" data-aos="flip-up" data-aos-offset="200">
-                            <div class="text-yellow-600 font-bold text-lg md:text-2xl">03</div>
+                        <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5 group" data-aos="fade-up" data-aos-offset="400">
+                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white">03</div>
                             <div class="text-white text-2xl md:text-3xl font-bold">Lorem Epsum</div>
-                            <div class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
+                            <div class="text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
                         </div>
                     </div>
                 </div>
@@ -181,42 +181,52 @@
                     <div class="ttl text-yellow-600 text-3xl lg:text-4xl text-center font-bold">Our Menu</div>
                     <div class="w-full flex flex-wrap justify-center py-14">
                         <div class="options flex gap-5 text-white text-xs md:text-sm lg:text-lg justify-center">
-                            <div id="all" class="hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">ALL</div>
-                            <div id="appetizers" class="hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">APPETIZERS</div>
-                            <div id="chicken" class="hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">CHICKEN</div>
-                            <div id="veg" class="hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">VEGETARIAN</div>
+                            <div id="all" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">ALL</div>
+                            <div id="appetizers" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">APPETIZERS</div>
+                            <div id="chicken" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">CHICKEN</div>
+                            <div id="veg" class="filter-btn hover:text-yellow-600 active:text-yellow-600 cursor-pointer duration-200 hover:border-b-2 pb-2 border-yellow-500 ">VEGETARIAN</div>
                         </div>
                     </div>
-                    <div id="menus" class=" flex flex-col gap-16">
+                    <div id="menus" class=" flex flex-col gap-16" data-aos="fade-up" data-aos-offset="200">
                         <!-- food items  -->
-                        <div class="flex justify-center" data-aos="zoom-in-up" data-aos-offset="200">
+                        <div class="flex justify-center appetizers fooditems">
                             <div id="fimage" class="w-[20%] flex justify-end">
                                 <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                             </div>
                             <div id="fdesc" class="w-[60%] px-3">
-                                <div class="font-bold text-xl text-yellow-600">Food Name</div>
+                                <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
+                                <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                            </div>
+                            <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
+                        </div>
+                        <div class="flex justify-center appetizers fooditems">
+                            <div id="fimage" class="w-[20%] flex justify-end">
+                                <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                            </div>
+                            <div id="fdesc" class="w-[60%] px-3">
+                                <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
                                 <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
                             </div>
                             <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                         </div>
 
-                        <div class="flex justify-center" data-aos="zoom-in-up" data-aos-offset="200">
+                        <div class="flex justify-center chicken fooditems">
                             <div id="fimage" class="w-[20%] flex justify-end">
                                 <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                             </div>
                             <div id="fdesc" class="w-[60%] px-3">
-                                <div class="font-bold text-xl text-yellow-600">Food Name</div>
+                                <div class="font-bold text-xl text-yellow-600">CHICKEN</div>
                                 <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
                             </div>
                             <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                         </div>
 
-                        <div class="flex justify-center" data-aos="zoom-in-up" data-aos-offset="200">
+                        <div class="flex justify-center veg fooditems">
                             <div id="fimage" class="w-[20%] flex justify-end">
                                 <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                             </div>
                             <div id="fdesc" class="w-[60%] px-3">
-                                <div class="font-bold text-xl text-yellow-600">Food Name</div>
+                                <div class="font-bold text-xl text-yellow-600">VEGETARIAN</div>
                                 <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
                             </div>
                             <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
@@ -224,18 +234,17 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <!-- ######### END of MENU ########## -->
         
         <!-- ######### SPECIALS ########## -->
         <section id="special">
-            <div class="w-full bg-[#0c0b09] py-20">
-                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
+            <div class="w-full bg-[#0c0b09] py-20" >
+                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto" >
                     <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center">Check Our Specials</div>
                     <div class="w-full gap-5 flex flex-col md:flex-row justify-center pt-14">
                         <div class="w-full h-fit md:w-fit border-r-0 md:border-r-4  border-yellow-600">
-                            <ul class=" md:w-fit" data-aos="zoom-in-right" data-aos-offset="200">
+                            <ul class=" md:w-fit">
                                 <li id="itm1" class="w-full md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-yellow-600 hover:text-black py-2 px-16">Item 1</li>
                                 <li id="itm2" class="w-full md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-yellow-600 hover:text-black py-2 px-16">Item 2</li>
                                 <li id="itm3" class="w-full md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-yellow-600 hover:text-black py-2 px-16">Item 3</li>
@@ -243,12 +252,12 @@
                             </ul>
                         </div>
                         <div class="flex flex-col-reverse xl:flex-row gap-8">
-                            <div class="text-white text-justify align-middle" data-aos="zoom-in-up" data-aos-offset="200">
+                            <div class="text-white text-justify align-middle">
                                 <span class="font-bold text-2xl">Food TITLE</span>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perferendis omnis quisquam recusandae modi dolorum! Culpa eligendi rerum explicabo ratione.</p>
                             </div>
                             <div class="">
-                                <img class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" data-aos="zoom-in-left" data-aos-offset="200">
+                                <img class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
                             </div>
                         </div>
                     </div>

@@ -3,48 +3,74 @@ menuButtonClose = document.querySelector("#close-nav-btn");
 mobMenu = document.querySelector("#nav-menu-mob");
 menuItems = document.querySelectorAll(".menu-items");
 
-menuButtonOpen.addEventListener("click", function(){
-    mobMenu.classList.remove("translate-x-96");
+menuButtonOpen.addEventListener("click", function () {
+  mobMenu.classList.remove("translate-x-96");
 })
-menuButtonClose.addEventListener("click", function(){
-    mobMenu.classList.add("translate-x-96");
+menuButtonClose.addEventListener("click", function () {
+  mobMenu.classList.add("translate-x-96");
 })
 
 for (let i = 0; i < menuItems.length; i++) {
-    const element = menuItems[i];
-    element.addEventListener("click", function(){
-        mobMenu.classList.add("translate-x-96");
-        console.log("clicked");
-    })
+  const element = menuItems[i];
+  element.addEventListener("click", function () {
+    mobMenu.classList.add("translate-x-96");
+    console.log("clicked");
+  })
 }
 // topbar hide 
-let topBar= document.querySelector("#topbar");
+let topBar = document.querySelector("#topbar");
 let lastScrollY = window.scrollY;
-window.addEventListener("scroll",()=>{
-  if (lastScrollY < window.scrollY){
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY) {
     console.log("scrolling down");
     topBar.classList.add("md:hidden");
   }
-  else{
+  else {
     console.log("scrolling up");
     topBar.classList.remove("md:hidden");
   }
   lastScrollY = window.scrollY;
 });
-
 upButton = document.querySelector("#upButton");
-window.addEventListener("scroll",()=>{
-    if (window.scrollY >=120){
-      upButton.classList.remove("hidden");
-    }
-    else{
-      upButton.classList.add("hidden");
-    }
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 120) {
+    upButton.classList.remove("hidden");
+  }
+  else {
+    upButton.classList.add("hidden");
+  }
 })
-
 // vanish loader
-var preloader =document.querySelector('#loader')
+var preloader = document.querySelector('#loader')
 window.addEventListener("load", vanish)
-function vanish(){
-    preloader.classList.add("vanish");
+function vanish() {
+  preloader.classList.add("vanish");
 }
+// menu filter 
+var btns = document.querySelectorAll(".filter-btn")
+for (let i = 0; i < btns.length; i++) {
+  const element = btns[i];
+  element.addEventListener("click", function () {
+    console.log(element.id);
+    document.querySelectorAll(".fooditems").forEach(element2 => {
+      if (element.id != "all") {
+        if (element2.classList.contains(element.id)) {
+
+          element2.classList.remove("hidden")
+        }
+        else {
+          element2.classList.add("hidden")
+        }
+      }
+      else {
+        element2.classList.remove("hidden")
+      }
+    });
+
+  })
+}
+// menulist hide-show 
+document.querySelector("#mob-menu-list").addEventListener("click", function () {
+  document.querySelector('#menulist').classList.toggle("hidden")
+  document.querySelector('#menulist').classList.toggle("flex")
+})
