@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         html {
       scroll-behavior: smooth;
@@ -19,6 +21,14 @@
     }
     
   }
+    .swiper-slide {
+      text-align: center;
+      background-color: #3f3729;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     </style>
     <title>Tandoor India</title>
 </head>
@@ -68,7 +78,7 @@
                                 </div>
                             </div>                         
                             <a href="#special"><li class="text-lg hover:text-yellow-600">Specials</li></a>
-                            <a href="#"><li class="text-lg hover:text-yellow-600">Contact</li></a>
+                            <a href="#contact"><li class="text-lg hover:text-yellow-600">Contact</li></a>
                             <a href="#location"><li class="text-lg hover:text-yellow-600">Location</li></a>
                         </ul>
                     </div>
@@ -90,7 +100,7 @@
                         <a href="#item3"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 3</li></a>
                     </ul></div>
                     <a href="#special"><li class="menu-items border-t-2  text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Specials</li></a>
-                    <a href="#"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Contact</li></a>
+                    <a href="#contact"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Contact</li></a>
                     <a href="#location"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold ">Location</li></a>
                 </ul>
             </div>
@@ -128,7 +138,7 @@
             <div  class="about  bg-black bg-opacity-75" >
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto flex flex-col md:flex-row-reverse justify-center gap-8 py-20">
                     <div id="about-right" class="w-full md:w-1/2">
-                        <img class=" w-full brightness-100 border-4 hover:scale-[1.05] duration-500 border-white" src="img/about.jpg" alt="about-image" data-aos="zoom-in-up" data-aos-offset="200">
+                        <img loading="lazy"  class=" w-full brightness-100 border-4 hover:scale-[1.05] duration-500 border-white" src="img/about.jpg" alt="about-image" data-aos="zoom-in-up" data-aos-offset="200">
                     </div>
                     <div id="about-left" class="w-full md:w-1/2">
                         <h1 class="text-white text-4xl font-bold">About Us </h1>
@@ -192,7 +202,7 @@
                             <!-- items  -->
                             <div class="flex justify-center ">
                                 <div id="fimage" class="w-[20%] flex justify-end">
-                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
@@ -203,7 +213,7 @@
                             <!-- items  -->
                             <div class="flex justify-center">
                                 <div id="fimage" class="w-[20%] flex justify-end">
-                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
@@ -216,7 +226,7 @@
                             <!-- items  -->
                             <div class="flex justify-center ">
                                 <div id="fimage" class="w-[20%] flex justify-end">
-                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">CHICKEN</div>
@@ -229,7 +239,7 @@
                                 <!-- items  -->
                             <div class="flex justify-center ">
                                 <div id="fimage" class="w-[20%] flex justify-end">
-                                    <img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">VEGETARIAN</div>
@@ -252,20 +262,54 @@
                     <div class="w-full gap-5 flex flex-col md:flex-row justify-center pt-14">
                         <div class="w-full h-fit md:w-fit border-r-0 md:border-r-4  border-yellow-600">
                             <ul class=" md:w-fit">
-                                <li id="itm1" class="w-full md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-yellow-600 hover:text-black py-2 px-16">Item 1</li>
-                                <li id="itm2" class="w-full md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-yellow-600 hover:text-black py-2 px-16">Item 2</li>
-                                <li id="itm3" class="w-full md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-yellow-600 hover:text-black py-2 px-16">Item 3</li>
-                                <li id="itm4" class="w-full md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-yellow-600 hover:text-black py-2 px-16">Item 4</li>
+                                <li><button id="itm1" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 1</button></li>
+                                <li><button id="itm2" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 2</button></li>
+                                <li><button id="itm3" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 3</button></li>
+                                <li><button id="itm4" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 4</button></li>
                             </ul>
                         </div>
-                        <div class="flex flex-col-reverse xl:flex-row gap-8">
-                            <div class="text-white text-justify align-middle">
-                                <span class="font-bold text-2xl">Food TITLE</span>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perferendis omnis quisquam recusandae modi dolorum! Culpa eligendi rerum explicabo ratione.</p>
+                        <div class="flex flex-col">
+                            <div id="stem1" class="flex flex-col-reverse xl:flex-row gap-8 scontents itm1">
+                                <div class="text-white text-justify align-middle flex flex-col gap-5">
+                                    <span class="font-bold text-2xl">Item 1</span>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perferendis omnis quisquam recusandae modi dolorum! Culpa eligendi rerum explicabo ratione.</p>
+                                    <a href="#sitm1"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
+                                </div>
+                                <div class="">
+                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                </div>
                             </div>
-                            <div class="">
-                                <img class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                            <div id="stem2" class="hidden flex-col-reverse xl:flex-row gap-8 scontents itm2">
+                                <div class="text-white text-justify align-middle flex flex-col gap-5">
+                                    <span class="font-bold text-2xl">Item 2</span>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perferendis omnis quisquam recusandae modi dolorum! Culpa eligendi rerum explicabo ratione.</p>
+                                    <a href="#sitm2"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
+                                </div>
+                                <div class="">
+                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                </div>
                             </div>
+                            <div id="stem3" class="hidden flex-col-reverse xl:flex-row gap-8 scontents itm3">
+                                <div class="text-white text-justify align-middle flex flex-col gap-5">
+                                    <span class="font-bold text-2xl">Item 3</span>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perferendis omnis quisquam recusandae modi dolorum! Culpa eligendi rerum explicabo ratione.</p>
+                                    <a href="#sitm3"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
+                                </div>
+                                <div class="">
+                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                </div>
+                            </div>
+                            <div id="stem4" class="hidden flex-col-reverse xl:flex-row gap-8 scontents itm4">
+                                <div class="text-white text-justify align-middle flex flex-col gap-5">
+                                    <span class="font-bold text-2xl">Item 4</span>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perferendis omnis quisquam recusandae modi dolorum! Culpa eligendi rerum explicabo ratione.</p>
+                                    <a href="#sitm4"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
+                                </div>
+                                <div class="">
+                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -307,8 +351,118 @@
             </div>
         </section>
         <!-- ######### END of STATUS ########## -->
-        
+
+        <!-- ######### CUSTOMER REVIEW ########## -->
+        <section id="customers">
+            <div class="w-full bg-[#1a1813] py-20" >
+                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
+                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl text-center font-bold">What they're saying about us</div>
+
+                      <!-- Swiper -->
+                        <div class="swiper mySwiper mt-20 md:w-3/5 lg:1/2" data-aos="fade-up" data-aos-offset="200">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"   class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide rounded-l">
+                                    <div class="flex flex-col gap-7">
+                                        <p class="w-[90%] h-60 mx-auto text-white text-justify mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias inventore perspiciatis facilis vitae. Temporibus ducimus ut id corrupti sed?</p>
+                                        <div class="mx-auto w-full absolute top-auto bottom-8">
+                                        <img loading="lazy"  class="w-20  h-20 mx-auto rounded-full border-4 border-yellow-600 p-0.5" src="img/customer.jpg" alt="cimg">
+                                        <span class="text-yellow-600 mt-3 text-lg">Customer Name</span></div>
+                                        
+                                    </div>
+                                </div>
+                          
+                            </div>
+                                <!-- <div class="swiper-button-next "></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination "></div> -->
+                        </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ######### END of CUSTOMER REVIEW ########## -->
+
+        <!-- ######### CONTACT US ########## -->
+        <section id="contact">
+            <div class="w-full bg-[#0c0b09] py-20" >
+
+            </div>
+        </section>
+        <!-- ######### END of CONTACT US ########## -->
     </main>
+
 
     <!-- ######### FOOTER ########## -->
     <footer class="w-screen bg-[#1a1813]">
@@ -336,7 +490,7 @@
 
             </div>
             <div id="" class="branding text-white w-full md:w-1/4 pl-0 md:pl-5">
-                <div class="ttl text-2xl font-semibold ">CONTACT US</div>
+                <div class="ttl text-2xl font-semibold ">LOCATION</div>
                 <div class="text-justify py-5">
                     <p class="pb-5">Tandoor India Restaurant</p>
                     <ul>
@@ -368,6 +522,29 @@
       AOS.init({
         mirror: false
       });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
     </script>
 
 </body>
