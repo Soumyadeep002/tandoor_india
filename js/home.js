@@ -93,3 +93,77 @@ document.querySelector("#mob-menu-list").addEventListener("click", function () {
   document.querySelector('#menulist').classList.toggle("hidden")
   document.querySelector('#menulist').classList.toggle("flex")
 })
+
+
+
+// swipper js 
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  slidesPerGroup: 1,
+  loop: true,
+  centerSlide: 'true',
+  fade:'true',
+  grabCursor:'true',
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation:{
+    nextEl:".swiper-button-next",
+    prevEl:".swiper-button-prev",
+  },
+  breakpoints:{
+    0:{
+      slidesPerView: 1,
+    },
+    768:{
+      slidesPerView: 2,
+    },
+    1080:{
+      slidesPerView: 3,
+    },
+  
+  },
+});
+
+//AOS
+AOS.init({
+  mirror: false
+});
+
+// number increment animation 
+const workSection = document.querySelector('#status')
+const workObserver = new IntersectionObserver((entries, observer)=>{
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+        const counterNum = document.querySelectorAll('.num');
+        const speed = 100;
+        counterNum.forEach((curElem) =>{
+            const updateNumber = () => {
+                const targetNumber = parseInt(curElem.dataset.number);
+                const initialNum= parseInt(curElem.innerText);
+                const incrementNum = Math.trunc(targetNumber/speed);
+                if (initialNum < targetNumber) {
+                    curElem.innerText = `${initialNum + incrementNum}`;
+                    setTimeout(updateNumber, 10);
+                }
+            }
+            updateNumber();
+        }) 
+        observer.unobserve(workSection);  
+},
+{
+    root:null,
+    threshold:0,
+})
+workObserver.observe(workSection);
+
+//end of number increament animation 
