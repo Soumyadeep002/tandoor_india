@@ -21,15 +21,20 @@ for (let i = 0; i < menuItems.length; i++) {
 }
 // topbar hide 
 let topBar = document.querySelector("#topbar");
+let navopc = document.querySelector("#nav-opc");
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
     // console.log("scrolling down");
     topBar.classList.add("md:hidden");
+    navopc.classList.remove("bg-opacity-60");
+    navopc.classList.add("bg-opacity-100");
   }
   else {
     // console.log("scrolling up");
     topBar.classList.remove("md:hidden");
+    navopc.classList.add("bg-opacity-60");
+    navopc.classList.remove("bg-opacity-100");
   }
   lastScrollY = window.scrollY;
 });
@@ -62,7 +67,6 @@ for (let i = 0; i < btns.length; i++) {
         }
         else {
           element2.classList.add("hidden")
-         
         }
     });
 
