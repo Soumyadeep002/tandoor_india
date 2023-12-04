@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+.vanish{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+}
