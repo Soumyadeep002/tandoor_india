@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Fira+Sans&family=Satisfy&display=swap');
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+}
+
+::selection{
+  color: white;
+  background: rgba(240, 189, 113, 0.37);
+}
+
+.my-satisfy-font{
+  font-family: 'Satisfy', sans-serif;
+}
+.my-txt-font{
+  font-family: 'Fira Sans', Arial;
 }
 
 .vanish{

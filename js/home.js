@@ -22,19 +22,19 @@ for (let i = 0; i < menuItems.length; i++) {
 // topbar hide 
 let topBar = document.querySelector("#topbar");
 let navopc = document.querySelector("#nav-opc");
-let lastScrollY = window.scrollY;
+// let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
-  if (lastScrollY < window.scrollY) {
+  if (window.scrollY > 100) {
     // console.log("scrolling down");
-    topBar.classList.add("md:hidden");
+    topBar.classList.add("-mt-11");
     navopc.classList.remove("bg-opacity-60");
-    navopc.classList.add("bg-opacity-100");
+    navopc.classList.add("md:bg-opacity-100");
   }
   else {
     // console.log("scrolling up");
-    topBar.classList.remove("md:hidden");
+    topBar.classList.remove("-mt-11");
     navopc.classList.add("bg-opacity-60");
-    navopc.classList.remove("bg-opacity-100");
+    navopc.classList.remove("md:bg-opacity-100");
   }
   lastScrollY = window.scrollY;
 });

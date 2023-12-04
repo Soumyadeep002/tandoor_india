@@ -24,19 +24,21 @@
     
     <!-- ######### HEADER ########## -->
     <header class="">
-        <nav id="nav" class="fixed w-full z-[99]">
-            <div id="topbar" class="relative w-full py-3">
+        <nav id="nav" class="fixed w-full z-[99] my-txt-font">
+            <div id="topbar" class="duration-200 w-full py-2">
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 flex justify-between text-white font-bold text-xs md:text-sm  gap-3 mx-auto">
                     <div>Mon-Sat: 11AM - 23PM</div>
-                    <div class="flex">
-                        <div class="border-r-2 border-white pr-4"><ion-icon name="call" ></ion-icon>+01 0000000000</div>
-                        <a href="#"><div class=""><ion-icon class="" name="logo-facebook"></ion-icon></div></a>
+                    <div class="flex gap-5">
+                        <div class=" md:text-lg "><ion-icon name="call" ></ion-icon>+01 0000000000</div>
+                        <a href="#"><div class=""><ion-icon class="text-lg md:text-xl" name="logo-facebook"></ion-icon></div></a>
+                        <a href="#"><div class=""><ion-icon class="text-lg md:text-xl" name="logo-instagram"></ion-icon></div></a>
+                        <a href="#"><div class=""><ion-icon class="text-lg md:text-xl" name="logo-twitter"></ion-icon></div></a>
                     </div>
                 </div>
             </div>
-            <div id="nav-opc" class="w-full bg-black bg-opacity-60 duration-300 transition-opacity py-4 absolute ">
+            <div id="nav-opc" class="w-full bg-black bg-opacity-60 duration-200 py-4 ">
                 <div class=" text-white flex my-auto justify-between w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
-                    <a href="#"><div id="logo" class="my-auto text-3xl font-semibold">Tandoor</div></a>
+                    <a href="#"><div id="logo" class="my-auto text-3xl font-semibold my-satisfy-font text-yellow-600">Tandoor</div></a>
                     <div id="nav-button" class="text-yellow-600 my-auto hover:cursor-pointer md:hidden pr-2 md:pr-0">
                         <ion-icon class="" name="apps" size="large"></ion-icon>
                     </div>
@@ -64,8 +66,13 @@
                     <!-- end of pc navigation -->
                 </div>
             </div>
+            <!-- announcements  -->
+            <div class="w-full py-1">
+                <marquee class="text-white" behavior="linear" direction="right"><a href="#">New Announcements will be here</a></marquee>
+            </div>
+            
             <!-- mobile navigation  -->
-            <div id="nav-menu-mob" class="absolute md:hidden bg-[#0c0b09] rounded-s-xl w-1/2 left-auto right-0 translate-x-96 duration-200 transition-transform">
+            <div id="nav-menu-mob" class="absolute md:hidden bg-[#0c0b09] rounded-s-xl w-1/2 left-auto right-0 -translate-y-16 translate-x-96 duration-200 transition-transform">
                 <div class=" text-yellow-600 text-right p-5 hover:cursor-pointer"><ion-icon id="close-nav-btn" class="hover:cursor-pointer" name="close" size="large"></ion-icon></div>
                 <ul id="" class="text-yellow-600 flex flex-col pl-4 pb-5">
                     <a href="#"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Home</li></a>
@@ -98,9 +105,9 @@
     <main>
         <!-- ######### HOME ########## -->
         <section id="home">
-            <div id="" class="w-screen h-screen bg-no-repeat bg-cover bg-[50%]" style="background-image: url(img/homebg.jpg); ">
+            <div id="" class="w-screen h-screen bg-no-repeat bg-cover bg-[50%] my-txt-font" style="background-image: url(img/homebg.jpg); ">
                 <div class="texts w-full h-full flex flex-col items-center justify-center px-5" data-aos="zoom-in-up">
-                    <div class="mainttl text-center text-7xl md:text-8xl lg:text-9xl font-serif hover:scale-110 duration-500 align-middle text-white"><span class="text-yellow-600">Better</span> Meal</div>
+                    <div class="mainttl text-center text-7xl md:text-8xl lg:text-9xl font-serif hover:scale-110 duration-500 align-middle text-white my-satisfy-font"><span class="text-yellow-600">Better</span> Meal</div>
                     <div class="w-full md:w-2/3 lg:1/3 text-white text-center mt-8 font-semibold bg-black py-8 px-5 bg-opacity-50">Here at Tandoor, the chef creates and provides our guest with authentic cuisine from Northern India, famous for its savory clay oven dishes and exotic curries.</div>
                     <div class="mt-10 flex flex-col md:flex-row gap-5">
                         <a href="#menu" class="border-2 border-yellow-600 py-3 px-9 hover:bg-yellow-600 duration-200 bg-black bg-opacity-50 text-lg font-semibold text-white rounded-xl">Our Menu</a>
@@ -119,8 +126,8 @@
                         <img loading="lazy"  class=" w-full brightness-100 border-4 hover:scale-[1.05] duration-500 border-white" src="img/about.jpg" alt="about-image" data-aos="zoom-in-up" data-aos-offset="200">
                     </div>
                     <div id="about-left" class="w-full md:w-1/2">
-                        <h1 class="text-white text-4xl font-bold">About Us </h1>
-                        <div class=" text-white text-justify" data-aos="zoom-in-up" data-aos-offset="200">
+                        <h1 class="text-white text-4xl font-bold my-satisfy-font">About us </h1>
+                        <div class="my-txt-font text-white text-justify" data-aos="zoom-in-up" data-aos-offset="200">
                             <br>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequuntur vero libero reprehenderit beatae voluptatum, assumenda doloribus similique dolore consectetur vitae exercitationem, eum iure cumque optio atque corporis eligendi qui?</p>
                             <br>
@@ -137,23 +144,23 @@
         <!-- ######### WHY-US ########## -->
         <section id="">
             <div class="w-full bg-[#0c0b09] py-20">
-                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
-                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center">Why Choose Our Restaurant</div>
+                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto my-txt-font">
+                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center my-satisfy-font">Why Choose Our Restaurant</div>
                     <div class="w-full gap-5 flex flex-wrap justify-center pt-14">
                         <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5 group" data-aos="fade-up" data-aos-offset="400">
-                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white">01</div>
-                            <div class="text-white text-2xl md:text-3xl font-bold">Lorem Epsum</div>
-                            <div class="text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
+                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white group-hover:scale-110 duration-200">01</div>
+                            <div class="text-white text-2xl md:text-3xl font-bold my-satisfy-font group-hover:scale-110 duration-200">Lorem Epsum</div>
+                            <div class="text-gray-400 group-hover:text-white group-hover:scale-110 duration-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
                         </div>
                         <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5 group" data-aos="fade-up" data-aos-offset="400">
-                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white">02</div>
-                            <div class="text-white text-2xl md:text-3xl font-bold">Lorem Epsum</div>
-                            <div class="text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
+                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white group-hover:scale-110 duration-200">02</div>
+                            <div class="text-white text-2xl md:text-3xl font-bold my-satisfy-font group-hover:scale-110 duration-200">Lorem Epsum</div>
+                            <div class="text-gray-400 group-hover:text-white group-hover:scale-110 duration-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
                         </div>
                         <div class="w-72 lg:w-80 h-72 bg-[#1a1813] hover:bg-yellow-600 p-8 flex flex-col gap-5 group" data-aos="fade-up" data-aos-offset="400">
-                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white">03</div>
-                            <div class="text-white text-2xl md:text-3xl font-bold">Lorem Epsum</div>
-                            <div class="text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
+                            <div class="text-yellow-600 font-bold text-lg md:text-2xl group-hover:text-white group-hover:scale-110 duration-200">03</div>
+                            <div class="text-white text-2xl md:text-3xl font-bold my-satisfy-font group-hover:scale-110 duration-200">Lorem Epsum</div>
+                            <div class="text-gray-400 group-hover:text-white group-hover:scale-110 duration-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae ut repellat!</div>
                         </div>
                     </div>
                 </div>
@@ -164,9 +171,9 @@
 
         <!-- ######### MENU ########## -->
         <section id="menu">
-            <div class="w-full bg-[#1a1813] py-20">
+            <div class="w-full bg-[#1a1813] py-20 my-txt-font">
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
-                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl text-center font-bold">Our Menu</div>
+                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl text-center font-bold my-satisfy-font">Our Menu</div>
                     <div class="w-full flex flex-wrap justify-center py-14">
                         <div class="options flex gap-5 text-white text-xs md:text-sm lg:text-lg justify-center">
                             <button id="appetizers" class="filter-btn hover:text-yellow-600 focus:text-yellow-600 cursor-pointer pb-2 ">Appetizers</button>
@@ -178,20 +185,20 @@
                         <!-- food items  -->
                         <div class="appetizers fooditems flex flex-col gap-16">
                             <!-- items  -->
-                            <div class="flex justify-center ">
+                            <div class="flex justify-center  duration-200 hover:scale-105">
                                 <div id="fimage" class="w-[20%] flex justify-end">
                                     <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
-                                    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                                    <div class="text-white">Molestias vero totam nesciunt corporis obcaecati, tempora officia. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
                                 </div>
                                 <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                             </div>
                             <!-- items  -->
-                            <div class="flex justify-center">
+                            <div class="flex justify-center duration-200 hover:scale-105">
                                 <div id="fimage" class="w-[20%] flex justify-end">
-                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/specials2.png" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">APPETIZERS</div>
@@ -202,22 +209,22 @@
                         </div>
                         <div class="chicken fooditems flex flex-col gap-16 hidden">
                             <!-- items  -->
-                            <div class="flex justify-center ">
+                            <div class="flex justify-center  duration-200 hover:scale-105">
                                 <div id="fimage" class="w-[20%] flex justify-end">
-                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/specials3.png" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">CHICKEN</div>
-                                    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero totam nesciunt corporis obcaecati, tempora officia.</div>
+                                    <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
                                 </div>
                                 <div id="fprice" class="w-[20%] text-yellow-600 text-xl"> <span class="text-yellow-600">$</span> <span class="text-white">200</span></div>
                             </div>
                         </div>
                         <div class="veg fooditems flex flex-col gap-16 hidden">
                                 <!-- items  -->
-                            <div class="flex justify-center ">
+                            <div class="flex justify-center  duration-200 hover:scale-105">
                                 <div id="fimage" class="w-[20%] flex justify-end">
-                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/food.jpg" alt="menu-food-item">
+                                    <img loading="lazy"  class="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-yellow-600 p-1" src="img/specials4.png" alt="menu-food-item">
                                 </div>
                                 <div id="fdesc" class="w-[60%] px-3">
                                     <div class="font-bold text-xl text-yellow-600">VEGETARIAN</div>
@@ -234,16 +241,16 @@
         
         <!-- ######### SPECIALS ########## -->
         <section id="special">
-            <div class="w-full bg-[#0c0b09] py-20" >
+            <div class="w-full bg-[#0c0b09] py-20 my-txt-font">
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto" >
-                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center">Check Our Specials</div>
+                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center my-satisfy-font">Check Our Specials</div>
                     <div class="w-full gap-5 flex flex-col md:flex-row justify-center pt-14">
-                        <div class="w-full h-fit md:w-fit border-r-0 md:border-r-4  border-yellow-600">
+                        <div class="w-full h-fit md:w-fit border-r-0 ">
                             <ul class=" md:w-fit">
-                                <li><button id="itm1" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 1</button></li>
-                                <li><button id="itm2" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 2</button></li>
-                                <li><button id="itm3" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 3</button></li>
-                                <li><button id="itm4" class="w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-yellow-600 focus:text-black  py-2 px-16">Item 4</button></li>
+                                <li><button id="itm1" class="md:border-r-4  border-[#1a1813] focus:border-yellow-600 w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-[#1a1813] py-2 px-16">Item 1</button></li>
+                                <li><button id="itm2" class="md:border-r-4  border-[#1a1813] focus:border-yellow-600 w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-[#1a1813] py-2 px-16">Item 2</button></li>
+                                <li><button id="itm3" class="md:border-r-4  border-[#1a1813] focus:border-yellow-600 w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-[#1a1813] py-2 px-16">Item 3</button></li>
+                                <li><button id="itm4" class="md:border-r-4  border-[#1a1813] focus:border-yellow-600 w-full sitems md:w-80 mx-auto text-white text-lg md:text-xl cursor-pointer hover:bg-[#1a1813] focus:bg-[#1a1813] py-2 px-16">Item 4</button></li>
                             </ul>
                         </div>
                         <div class="flex flex-col">
@@ -254,7 +261,7 @@
                                     <a href="#sitm1"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
                                 </div>
                                 <div class="">
-                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                    <img loading="lazy"  class="w-[60%] md:w-48 lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
                                 </div>
                             </div>
                             <div id="stem2" class="hidden flex-col-reverse xl:flex-row gap-8 scontents itm2">
@@ -264,7 +271,7 @@
                                     <a href="#sitm2"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
                                 </div>
                                 <div class="">
-                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                    <img loading="lazy"  class="w-[60%] md:w-48 lg:max-w-[15rem] mx-auto" src="img/specials2.png" alt="special-food" >
                                 </div>
                             </div>
                             <div id="stem3" class="hidden flex-col-reverse xl:flex-row gap-8 scontents itm3">
@@ -274,7 +281,7 @@
                                     <a href="#sitm3"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
                                 </div>
                                 <div class="">
-                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                    <img loading="lazy"  class="w-[60%] md:w-48 lg:max-w-[15rem] mx-auto" src="img/specials3.png" alt="special-food" >
                                 </div>
                             </div>
                             <div id="stem4" class="hidden flex-col-reverse xl:flex-row gap-8 scontents itm4">
@@ -284,7 +291,7 @@
                                     <a href="#sitm4"><div class="bg-yellow-600 py-2 px-4 rounded-md hover:bg-yellow-700 w-fit mx-auto">View Details</div></a>
                                 </div>
                                 <div class="">
-                                    <img loading="lazy"  class="w-[90%] md:max-w-xs lg:max-w-[15rem] mx-auto" src="img/specials.png" alt="special-food" >
+                                    <img loading="lazy"  class="w-[60%] md:w-48 lg:max-w-[15rem] mx-auto" src="img/specials4.png" alt="special-food" >
                                 </div>
                             </div>
                             
@@ -298,9 +305,9 @@
         <!-- ######### STATUS ########## -->
         <section id="status" class="bg-cover bg-no-repeat bg-[50%] bg-fixed bg-black" style="background-image: url(img/homebg.jpg); ">
             <div  class="about  bg-black bg-opacity-75" >
-                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto flex flex-col md:flex-row-reverse justify-center gap-8 py-20">
+                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto flex flex-col md:flex-row-reverse justify-center gap-8 py-20 my-txt-font">
                     <div  class="w-full ">
-                        <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center">Our Status</div>
+                        <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center my-satisfy-font">Our Status</div>
                         <div class=" text-white text-center py-14 w-full md:w-[80%] lg:w-[70%] mx-auto" data-aos="zoom-in-up" data-aos-offset="200">
                             India is famous for its exotic cuisine prepared with artful and exquisite combination of spices.
                             The igloo-shaped clay oven known as the tandoor is most closely identified with Indian cooking. This is an excellent method of baking meats, poultry, fish and bread. This method of cooking originated in Afghanistan and was brought to India by the Mughal rulers.
@@ -329,9 +336,9 @@
 
         <!-- ######### CUSTOMER REVIEW ########## -->
         <section id="customers">
-            <div class="w-full bg-[#1a1813] py-20" >
+            <div class="w-full bg-[#1a1813] py-20 my-txt-font" >
                 <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto ">
-                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl text-center font-bold ">What they're saying about us</div>
+                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl text-center font-bold my-satisfy-font">What they're saying about us</div>
 
                       <!-- Swiper -->
                         <div class="swiper mySwiper " data-aos="zoom-in" data-aos-offset="200">
@@ -423,12 +430,17 @@
         <!-- ######### END of CONTACT US ########## -->
     </main>
     <!-- ######### FOOTER ########## -->
-    <footer class="w-screen bg-[#1a1813]">
+    <footer class="w-screen bg-[#1a1813] my-txt-font">
         <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto py-16 flex flex-col md:flex-row">
-            <div id="brand-name" class="branding text-white w-full md:w-1/4">
-                <div class="ttl text-4xl font-semibold ">Tandoor</div>
-                <div class="text-justify py-10">
+            <div id="brand-name" class="branding text-white w-full md:w-1/4 mb-8">
+                <div class="ttl text-4xl my-satisfy-font text-yellow-600">Tandoor</div>
+                <div class="text-justify pt-5 pb-10">
                     <p>Here at Tandoor, the chef creates and provides our guest with authentic cuisine from Northern India, famous for its savory clay oven dishes and exotic curries.</p>
+                </div>
+                <div class="w-full flex justify-start gap-7">
+                    <a href="#"><div class=""><ion-icon class="" name="logo-facebook" size="large"></ion-icon></div></a>
+                    <a href="#"><div class=""><ion-icon class="" name="logo-instagram" size="large"></ion-icon></div></a>
+                    <a href="#"><div class=""><ion-icon class="" name="logo-twitter" size="large"></ion-icon></div></a>
                 </div>
             </div>
             <div id="" class="branding text-white w-full md:w-1/4 pl-0 md:pl-10">
