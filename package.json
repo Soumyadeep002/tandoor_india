@@ -1,9 +1,7 @@
 {
 
   "main": "index.js",
-  "engines": {
-    "node": "20.x"
-  },  
+ 
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
