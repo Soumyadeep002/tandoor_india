@@ -8,7 +8,7 @@ console.log(path.join(__dirname, '/public'));
 app.use(express.static(path.join(__dirname, '/public')))
 
 app.get("/menu", (req, res) =>{
-    res.sendFile("E:\\Programs\\Web Development\\tandoor_india\\public\\menu.html");
+    res.sendFile(path.join(__dirname, '/public/menu.html'));
 })
 
 app.get("/", (req, res) => {
