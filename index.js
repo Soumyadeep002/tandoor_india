@@ -9,6 +9,9 @@ app.use(express.static(path.join(__dirname, '/public')))
 app.get("/", (req, res) => {
     res.send("hello express");
 })
+app.get("/booking", (req, res) => {
+    res.send("This will be booking page");
+})
 
 app.listen(port, () =>{
     console.log(`starting server on port ${port}`);
