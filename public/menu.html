@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <title>Tandoor India</title>
+</head>
+<body class="overflow-x-hidden scroll-smooth">
+        <!-- ######### LOADER ########## -->
+    <div id="loader" class="fixed flex justify-center items-center w-screen h-screen z-[299] bg-[#0c0b09]">
+       <div class="w-20 h-20 border-8 border-[#1b1b19] animate-spin border-t-yellow-600 rounded-full">
+
+       </div>
+    </div>
+    <!-- ######### END of LOADER ########## -->
+    
+    <div class="-mt-11 hidden"></div>
+    <!-- ######### HEADER ########## -->
+    <header class="">
+        <nav id="nav" class="fixed w-full z-[99] my-txt-font">
+            <div id="topbar" class="duration-200 w-full py-2 ">
+                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 flex justify-between text-white font-bold text-xs md:text-sm  gap-3 mx-auto">
+                    <div>Mon-Sat: 11AM - 23PM</div>
+                    <div class="flex gap-5">
+                        <div class=" md:text-lg "><ion-icon name="call" ></ion-icon>+01 0000000000</div>
+                        <a href="#"><div class=""><ion-icon class="text-lg md:text-xl" name="logo-facebook"></ion-icon></div></a>
+                        <a href="#"><div class=""><ion-icon class="text-lg md:text-xl" name="logo-instagram"></ion-icon></div></a>
+                        <a href="#"><div class=""><ion-icon class="text-lg md:text-xl" name="logo-twitter"></ion-icon></div></a>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-opc" class="w-full bg-black bg-opacity-60 duration-200 py-4 ">
+                <div class=" text-white flex my-auto justify-between w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
+                    <a href="#"><div id="logo" class="my-auto text-3xl font-semibold my-satisfy-font text-yellow-600">Tandoor</div></a>
+                    <div id="nav-button" class="text-yellow-600 my-auto hover:cursor-pointer md:hidden pr-2 md:pr-0">
+                        <ion-icon class="" name="apps" size="large"></ion-icon>
+                    </div>
+                    <!-- pc navigation -->
+                    <div id="pc-nav" class="hidden md:block my-auto">
+                        <ul class="text-white flex items-center gap-5">
+                            <a href="\"><li class="text-lg hover:text-yellow-600">Home</li></a>
+                            <a href="/booking"><li class="text-lg hover:text-yellow-600">Booking</li></a>
+                            <a href="#about"><li class="text-lg hover:text-yellow-600">About Us</li></a>
+                            <div class="group">
+                                <li class="text-lg hover:text-yellow-600 ">Menus</li>
+                                <div class="">
+                                    <ul class="group-hover:visible flex invisible transition-transform duration-200 translate-y-3 flex-col gap-1 absolute group-hover:translate-y-0 bg-[#0c0b09]">
+                                        <a href="\menu"><li class="px-8 hover:bg-yellow-600 py-2">Item 1</li></a>
+                                        <a href="\menu"><li class="px-8 hover:bg-yellow-600 py-2">Item 2</li></a>
+                                        <a href="\menu"><li class="px-8 hover:bg-yellow-600 py-2">Item 3</li></a>
+                                    </ul>  
+                                </div>
+                            </div>                         
+                            <a href="\#special"><li class="text-lg hover:text-yellow-600">Specials</li></a>
+                            <a href="#contact"><li class="text-lg hover:text-yellow-600">Contact</li></a>
+                            <a href="#location"><li class="text-lg hover:text-yellow-600">Location</li></a>
+                        </ul>
+                    </div>
+                    <!-- end of pc navigation -->
+                </div>
+            </div>
+            <!-- announcements  -->
+            <!-- <div class="w-full py-1">
+                <marquee class="text-white" behavior="linear" direction="right"><a href="#">New Announcements will be here</a></marquee>
+            </div> -->
+            
+            <!-- mobile navigation  -->
+            <div id="nav-menu-mob" class="absolute md:hidden bg-[#0c0b09] rounded-s-xl w-1/2 left-auto right-0 -translate-y-16 translate-x-96 duration-200 transition-transform">
+                <div class=" text-yellow-600 text-right p-5 hover:cursor-pointer"><ion-icon id="close-nav-btn" class="hover:cursor-pointer" name="close" size="large"></ion-icon></div>
+                <ul id="" class="text-yellow-600 flex flex-col pl-4 pb-5">
+                    <a href="\"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Home</li></a>
+                    <a href="/booking"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Booking</li></a>
+                    <a href="#about"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">About Us</li></a>
+                    <div class="group"><li id="mob-menu-list" class="text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-yellow-600">Menus
+                    </li>
+                    <ul id="menulist" class="hidden flex-col gap-1">
+                        <a href="\menu"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 1</li></a>
+                        <a href="\menu"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 2</li></a>
+                        <a href="\menu"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 3</li></a>
+                    </ul></div>
+                    <a href="\#special"><li class="menu-items border-t-2  text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Specials</li></a>
+                    <a href="#contact"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Contact</li></a>
+                    <a href="#location"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold ">Location</li></a>
+                </ul>
+            </div>
+            <!-- end of mobile navigation  -->
+        </nav>
+    </header>
+    <!-- ######### END of HEADER ########## -->
+
+    <!-- ######### UPBUTTON ########## -->
+    <a href="#">
+        <div id="upButton" style="left: auto; right: 1rem; top: auto; bottom: 1rem;" class="h-fit hidden fixed z-[100] text-yellow-600 border-2 border-yellow-600 p-3 rounded-full animate-bounce bg-black bg-opacity-50">
+        <ion-icon name="chevron-up-outline" class="" size="large"></ion-icon>
+        </div>
+    </a>
+
+    <main>
+        <!-- ######### HEADING ########## -->
+        <section id="home">
+            <div id="" class="w-screen h-[50vh] md:h-[70vh] bg-no-repeat bg-cover bg-[30%] md:bg-[50%] my-txt-font" style="background-image: url(img/menubg.jpg); ">
+                <div class="w-full h-full flex justify-center items-center text-7xl md:text-8xl lg:text-9xl text-white my-satisfy-font bg-black bg-opacity-60">
+                    <div>Our <span class="text-yellow-600">Menu</span></div>
+                </div>
+            </div>
+        </section>
+         <!-- ######### End of HEADING ########## -->
+
+         <!-- ######### content ########## -->
+        <section id="menus">
+            <div class="w-full bg-[#1a1813] py-20">
+                <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto my-txt-font">
+                    <div class="ttl text-yellow-600 text-3xl lg:text-4xl font-bold text-center my-satisfy-font">Taste the flavours of India</div>
+                    <div class="w-full">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ######### content ########## -->
+
+    </main>
+
+
+    <!-- ######### FOOTER ########## -->
+    <footer class="w-screen bg-[#0c0b09] my-txt-font">
+        <div class="w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto py-16 flex flex-col md:flex-row">
+            <div id="brand-name" class="branding text-white w-full md:w-1/4 mb-8">
+                <div class="ttl text-4xl my-satisfy-font text-yellow-600">Tandoor</div>
+                <div class="text-justify pt-5 pb-10">
+                    <p>Here at Tandoor, the chef creates and provides our guest with authentic cuisine from Northern India, famous for its savory clay oven dishes and exotic curries.</p>
+                </div>
+                <div class="w-full flex justify-start gap-7">
+                    <a href="#"><div class=""><ion-icon class="" name="logo-facebook" size="large"></ion-icon></div></a>
+                    <a href="#"><div class=""><ion-icon class="" name="logo-instagram" size="large"></ion-icon></div></a>
+                    <a href="#"><div class=""><ion-icon class="" name="logo-twitter" size="large"></ion-icon></div></a>
+                </div>
+            </div>
+            <div id="" class="branding text-white w-full md:w-1/4 pl-0 md:pl-10">
+                <div class="ttl text-2xl font-semibold pb-5">Usefull Links</div>
+                <ul class="pl-5 pb-10">
+                    <a href="#"><li>Link 1</li></a>
+                    <a href="#"><li>Link 2</li></a>
+                    <a href="#"><li>Link 3</li></a>
+                    <a href="#"><li>Link 4</li></a>
+                    <a href="#"><li>Link 5</li></a>
+                </ul>
+            </div>
+            <div id="" class="branding text-white w-full md:w-1/4 pl-0 md:pl-5">
+                <div class="ttl text-2xl font-semibold ">DINNER HOURS</div>
+                <div class="py-3">Mon - Sat: 11.00 AM - 23.00 PM</div>
+                <div class="pb-10">We are closed on Sundays</div>
+
+            </div>
+            <div id="" class="branding text-white w-full md:w-1/4 pl-0 md:pl-5">
+                <div class="ttl text-2xl font-semibold ">LOCATION</div>
+                <div class="text-justify py-5">
+                    <p class="pb-5">Tandoor India Restaurant</p>
+                    <ul>
+                        <li>+01 0000000000</li>
+                        <li>emailofreastaurent@email.domain</li>
+                        <li>this is address, Restraunt, country</li>
+                    </ul>
+                    <iframe id="location" class="mt-5 pr-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117909.28355039969!2d88.3785728!3d22.5542144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276a208cb6793%3A0x676bbf22d04354e8!2sScience%20City%20-%20Kolkata!5e0!3m2!1sen!2sin!4v1700922871827!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-bar" class="bg-[#0c0b09] text-center text-white py-3">
+            Designed & Developed by <a href="https://github.com/Soumyadeep002" target="_blank"><span class="text-yellow-600 font-semibold">soumyadeep002</span></a>
+        </div>
+    </footer>
+    <!-- ######### END of FOOTER ########## -->
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- AOS js  -->
+    <script src="js/aos.js"></script>
+    <!--Main js  -->
+    <script src="js/home.js"></script>
+    <!-- ion-icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
