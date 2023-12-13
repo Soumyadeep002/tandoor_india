@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div id="nav-opc" class="w-full bg-black bg-opacity-60 duration-200 py-4 ">
+            <div id="nav-opc" class="w-full bg-black bg-opacity-60 duration-200 py-4 z-[11]">
                 <div class=" text-white flex my-auto justify-between w-11/12 md:w-5/6 lg:w-4/6 xl:w-3/5 mx-auto">
                     <a href="#"><div id="logo" class="my-auto text-3xl font-semibold my-satisfy-font text-yellow-600">Tandoor</div></a>
                     <div id="nav-button" class="text-yellow-600 my-auto hover:cursor-pointer md:hidden pr-2 md:pr-0">
@@ -47,29 +47,29 @@
                     <div id="pc-nav" class="hidden md:block my-auto">
                         <ul class="text-white flex items-center gap-5">
                             <a href="\"><li class="text-lg hover:text-yellow-600">Home</li></a>
-                            <a href="/booking"><li class="text-lg hover:text-yellow-600">Booking</li></a>
-                            <a href="#about"><li class="text-lg hover:text-yellow-600">About Us</li></a>
+                            <a href="#!"><li class="text-lg hover:text-yellow-600">Booking</li></a>
+                            <a href="index.html#about"><li class="text-lg hover:text-yellow-600">About Us</li></a>
                             <div class="group">
                                 <li class="text-lg hover:text-yellow-600 ">Menus</li>
-                                <div class="">
+                                <div class=" z-[110]">
                                     <ul class="group-hover:visible flex invisible transition-transform duration-200 translate-y-3 flex-col gap-1 absolute group-hover:translate-y-0 bg-[#0c0b09]">
-                                        <a href="\menu"><li class="px-8 hover:bg-yellow-600 py-2">Item 1</li></a>
-                                        <a href="\menu"><li class="px-8 hover:bg-yellow-600 py-2">Item 2</li></a>
-                                        <a href="\menu"><li class="px-8 hover:bg-yellow-600 py-2">Item 3</li></a>
+                                        <a href="menu.html"><li class="px-8 hover:bg-yellow-600 py-2">Item 1</li></a>
+                                        <a href="menu.html"><li class="px-8 hover:bg-yellow-600 py-2">Item 2</li></a>
+                                        <a href="menu.html"><li class="px-8 hover:bg-yellow-600 py-2">Item 3</li></a>
                                     </ul>  
                                 </div>
                             </div>                         
-                            <a href="\#special"><li class="text-lg hover:text-yellow-600">Specials</li></a>
-                            <a href="#contact"><li class="text-lg hover:text-yellow-600">Contact</li></a>
-                            <a href="#location"><li class="text-lg hover:text-yellow-600">Location</li></a>
+                            <a href="index.html#special"><li class="text-lg hover:text-yellow-600">Specials</li></a>
+                            <a href="index.html#contact"><li class="text-lg hover:text-yellow-600">Contact</li></a>
+                            <a href="index.html#location"><li class="text-lg hover:text-yellow-600">Location</li></a>
                         </ul>
                     </div>
                     <!-- end of pc navigation -->
                 </div>
             </div>
             <!-- announcements  -->
-            <!-- <div class="w-full py-1">
-                <marquee class="text-white" behavior="linear" direction="right"><a href="#">New Announcements will be here</a></marquee>
+            <!-- <div class="w-full py-1 ">
+                <marquee class="text-white z-[0] inline-block" behavior="linear" direction="right"><a href="#">New Announcements will be here</a></marquee>
             </div> -->
             
             <!-- mobile navigation  -->
@@ -77,18 +77,18 @@
                 <div class=" text-yellow-600 text-right p-5 hover:cursor-pointer"><ion-icon id="close-nav-btn" class="hover:cursor-pointer" name="close" size="large"></ion-icon></div>
                 <ul id="" class="text-yellow-600 flex flex-col pl-4 pb-5">
                     <a href="\"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Home</li></a>
-                    <a href="/booking"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Booking</li></a>
-                    <a href="#about"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">About Us</li></a>
+                    <a href="#!"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Booking</li></a>
+                    <a href="index.html#about"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">About Us</li></a>
                     <div class="group"><li id="mob-menu-list" class="text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-yellow-600">Menus
                     </li>
                     <ul id="menulist" class="hidden flex-col gap-1">
-                        <a href="\menu"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 1</li></a>
-                        <a href="\menu"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 2</li></a>
-                        <a href="\menu"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 3</li></a>
+                        <a href="menu.html"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 1</li></a>
+                        <a href="menu.html"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 2</li></a>
+                        <a href="menu.html"><li class="pl-5 hover:bg-[#1a1813] py-2">Item 3</li></a>
                     </ul></div>
-                    <a href="\#special"><li class="menu-items border-t-2  text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Specials</li></a>
-                    <a href="#contact"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Contact</li></a>
-                    <a href="#location"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold ">Location</li></a>
+                    <a href="index.html#special"><li class="menu-items border-t-2  text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Specials</li></a>
+                    <a href="index.html#contact"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold border-b-2 border-yellow-600">Contact</li></a>
+                    <a href="index.html#location"><li class="menu-items text-xl pl-3 py-6 hover:bg-yellow-600 hover:text-white font-semibold ">Location</li></a>
                 </ul>
             </div>
             <!-- end of mobile navigation  -->
